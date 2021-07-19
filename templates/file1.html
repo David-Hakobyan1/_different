@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">W e l c o m e <q> POLE CHUDES </q> game</h1>
+<p> </p>
+<h1 style="color: red;">{{HARC}}</h1>
+<h1 style="background-color: blue; color: white;">{{har}}</h1>
+<p><b>{{vand}}</b><p>
+<form method="POST">
+    {{ form1.hidden_tag() }}
+    {{form1.fnum.label()}}{{form1.fnum}}
+    {{form1.play1}}
+</form>
+{% endblock %}

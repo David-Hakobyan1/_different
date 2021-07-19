@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;"> Vocabulary </h1>
+<p> </p>
+<form action='{{url_for("Addto")}}'  method="POST">
+	{% if info=="sorry this word not in Vocabulary" %}
+		<h1>{{info}}</h1>
+	{% else %}
+		<h1><q>{{info}}</q></h1>
+    		{{ form2.hidden_tag() }}
+    		{{form2.fnum2.label()}}{{form2.fnum2}}
+    		{{form2.play}}
+	{% endif %}
+</form>
+{% endblock %}
+

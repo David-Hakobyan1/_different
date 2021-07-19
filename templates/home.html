@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">{{mylis[0]}}</h1>
+{% for el in mylis[1].split(",") %}
+<p>{{el}}</p>
+{% endfor %}
+<form method="POST" action='{{url_for("about")}}'>
+    {{ form.hidden_tag() }}
+    {{ form.fnum.label() }}{{ form.fnum }}
+    {{form.play}}
+</form>
+{% if info== "Right" %}
+    <p style="color:green;"><b>{{info}}</b></p>
+{% else %}
+    <p style="color:red;"><b>{{info}}</b></p>
+{% endif %}
+{% endblock %}
+

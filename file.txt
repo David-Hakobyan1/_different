@@ -1,0 +1,3 @@
+login:dav123,parol:hak123,fullname:David Hakobyan
+login:fat,parol:er,fullname:fat
+login:dvz,parol:xcb,fullname:fatxcv

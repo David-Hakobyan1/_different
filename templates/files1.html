@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">W e l c o m e </h1>
+<p> </p>
+<form action='{{url_for("register")}}' method="POST">
+    {{ form2.hidden_tag() }}
+    {{form2.fnum1.label()}}{{form2.fnum1}}
+    {{form2.fnum2.label()}}{{form2.fnum2}}
+    {{form2.fnum3.label()}}{{form2.fnum3}}
+    {{form2.play}}
+</form>
+{% endblock %}
+

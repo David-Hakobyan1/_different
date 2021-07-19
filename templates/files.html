@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">W e l c o m e </h1>
+<p> </p>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{form.play}}
+    {{form1.play1}}
+</form>
+{% endblock %}
+

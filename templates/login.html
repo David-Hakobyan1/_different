@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+Daser
+{% endblock %}
+{% block body %}
+<h1> REGISTER </h1>
+<form action="/login" method="POST">
+	<input placeholder="Name" autocomplete="off" type="text" name="name">
+	<input type="submit" name="Register">
+</form>
+{% endblock %}

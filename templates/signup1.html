@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1>SIGN UP</h1>
+<form action='{{url_for("signup")}}' method="POST">
+	{{ form.hidden_tag() }}
+	{{ wtf.form_field(form.username) }}
+	{{ wtf.form_field(form.email) }}
+	{{ wtf.form_field(form.password) }}
+	{{ form.play }}
+</form>
+{% endblock %}

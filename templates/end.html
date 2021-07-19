@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;"> Vocabulary </h1>
+<p> </p>
+<form  method="POST">
+	{% for i in s.split(" ") %}
+	<h1>{{i}}</h1>
+	{% endfor %}
+</form>
+{% endblock %}
+

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">W e l c o m e </h1>
+<p> </p>
+<form method="POST">
+    {% if info=="allready exists" %}
+        <h1>{{info}}</h1>
+    {% elif info=="dos not exists" %}
+    	<h1>LOGIN <q>{{fnum4}}</q> {{info}}</h1>
+    {% elif info=="wrong password" %}
+    	<h1 name='password'>PASSWORD <q>{{fnum5}}</q> {{info}}</h1>
+    {% elif info=="register" %}
+        <p><a href="/about/{{fnum2}}/{{fnum3}}/{{fnum1}}">{{fnum1}}</a> PAGE</p>
+    {% else %}
+    	<p><a href="/about/{{fnum4}}/{{fnum5}}/{{info}}">{{info}}</a> PAGE</p>
+    {% endif %}
+</form>
+{% endblock %}

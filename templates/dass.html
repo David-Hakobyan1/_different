@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;"> Vocabulary </h1>
+<p> </p>
+<form method="POST">
+    {{ form1.hidden_tag() }}
+    {{form1.fnum1.label()}}{{form1.fnum1}}
+    {{form1.play}}
+</form>
+{% endblock %}
+

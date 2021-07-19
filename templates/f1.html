@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+DaSeR
+{% endblock %}
+
+{% block body %}
+<h1 style="color:blue;">W e l c o m e <q>My Page</q></h1>
+<!--<h2 style="background-color: blue; color: white;">I am using a color name to assign a color to this background and text</h2>-->
+<p> </p>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{form.fnum.label()}}{{form.fnum}}
+    {{form.act.label()}}{{form.act}}
+    {{form.snum.label()}}{{form.snum}}
+    {{form.calc}}
+    <hr>
+    {{summ}}
+</form>
+
+
+{% endblock %}
